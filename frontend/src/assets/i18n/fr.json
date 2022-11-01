@@ -1,0 +1,68 @@
+{
+  "app": {
+    "appTitle": "light-speed checkout",
+    "signUp": {
+      "title": "S'inscrire",
+      "fullname": "Nom complet",
+      "email": "Email",
+      "password": "Password",
+      "agreeWithTerms": "Accepter les terms de license et les conditions",
+      "btnSignUp": "S'inscrire",
+      "signInPage": "Avez vous déjà un compte ?",
+      "successSignUp": "Votre compte à bien été créé avec success. Félicitation!",
+      "wrongId": "Connexion échoué. Veillez s'il vous vérifier vos identifiants puis réessayer à nouveau!",
+      "conflit": "Un utilisateur est déjà enregistrer avec cet email. Veillez s'il vous plait en sélectionnez un autre! ",
+      "errors": {
+        "fullname": "Le nom complet est obligatoire",
+        "email": "L'email est obligatoire",
+        "password": "Le mot de passe est obligatoire",
+        "agreeWithTerms": "Vous devez d'abord accepter les terms de license et les conditions"
+      }
+    },
+    "signIn": {
+      "title": "Se connecter",
+      "btnSignIn": "Se connecter",
+      "signUp": "Créer un compte",
+      "rememberMe": "Se rappeler de moi"
+    },
+    "accountRecovery": {
+      "link": "Mot de passe oublié?",
+      "title": "Entrer votre adresse email",
+      "subtitle": "Entrer votre adresse email et nous vous enverrons un lien pour modifier votre de passe!",
+      "btnValidate":"Valider",
+      "success": "Un lien vous a été envoyé avec success. Veillez verifier votre méssagerie",
+      "notFoundEmail": "Cet email n'existe pas dans notre base de donnée. Veillez s'il vous vérifier votre adresse email ou créer un nouveau compte"
+    },
+    "resetPassword": {
+      "title": "Changez votre mot de passe",
+      "password": "Password",
+      "passwordConfirmation": "Password confirmation",
+      "btnSubmit": "Soumettre",
+      "passwordMatchWarn": "Vos mot de passe ne correspondent pas. Veillez s'il vous plait réessayer",
+      "errors": {
+        "passwordConfirmation": "La confirmation du mot de passe est obligatoire!"
+      }
+    },
+    "errors": {
+      "badRequest": "Le site rencontre un problème. Veillez rééssayer plus tard..."
+    },
+    "verifiedEmailMessage": "Vote adresse email a été verifié avec success!",
+    "signUpWithGoogle": "S'inscrire avec Google",
+    "signUpWithFB": "S'inscrire avec Facebook",
+    "signInWithGoogle": "Se connecter avec Google",
+    "signInWithFB": "Se connecter avec Facebook",
+    "product": {
+      "new": "Nouveau produit"
+    },
+    "service": {
+      "new":"Nouveau service"
+    },
+    "subscription": {
+      "new": "Nouvel abonnement"
+    },
+    "user": {
+      "profile": "Profil"
+    },
+    "logout": "Se deconnecter"
+  }
+}

@@ -1,0 +1,90 @@
+<nb-layout>
+    <nb-layout-column>
+        <section>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-12 col-sm-8 offser-sm-12 col-md-4 offset-md-4">
+                        <nb-card>
+                            <nb-card-header>
+                                <app-back-nav title="{{ 'app.title' | translate }}" link="/"></app-back-nav>
+                            </nb-card-header>
+                            <nb-card-body class="pt-4 pb-5">
+                                <h3 class="text-center">{{'app.signUp.title' | translate }}</h3>
+                                <form [formGroup]="signUpFormGroup" (ngSubmit)="signUp(signUpFormGroup.value)"
+                                    #formDir="ngForm">
+                                    <div class="form-control-group">
+                                        <label class="label" for="fullname">{{ 'app.signUp.fullname' |
+                                            translate}}</label>
+                                        <input nbInput fieldSize="large" id="fullname" type="text"
+                                            placeholder="{{ 'app.signUp.fullname' | translate }}"
+                                            formControlName="fullname" fullWidth autofocus>
+                                        <ng-container *ngIf="formDir.hasError('required', ['fullname'])">
+                                            <div class="caption status-danger">
+                                                {{ 'app.signUp.errors.fullname' | translate }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
+                                    <div class="form-control-group mt-4">
+                                        <label class="label" for="email">{{ 'app.signUp.email' | translate }}</label>
+                                        <input nbInput fieldSize="large" id="email" type="email" pattern=".+@.+..+"
+                                            placeholder="{{ 'app.signUp.email' | translate }}" formControlName="email"
+                                            fullWidth autofocus>
+                                        <ng-container *ngIf="formDir.hasError('required', ['email'])">
+                                            <div class="caption status-danger">
+                                                {{ 'app.signUp.errors.email' | translate }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
+                                    <div class="form-control-group mt-4">
+                                        <label class="label" for="email">{{ 'app.signUp.password' | translate }}</label>
+                                        <input nbInput fieldSize="large" id="password" type="password"
+                                            (keyup)="onPasswordKeyup($event)"
+                                            placeholder="{{ 'app.signUp.password' | translate }}"
+                                            formControlName="password" fullWidth autofocus>
+                                        <ng-container *ngIf="wrongPasswordMessage">
+                                            <div class="caption status-danger">
+                                                {{wrongPasswordMessage}}
+                                            </div>
+                                        </ng-container>
+                                        <ng-container *ngIf="formDir.hasError('required', ['password'])">
+                                            <div class="caption status-danger">
+                                                {{ 'app.signUp.errors.password' | translate }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
+                                    <div class="form-control-group mt-4">
+                                        <nb-checkbox formControlName="agreeWithTerms">
+                                            <a href="#" target="_blank"><b>{{ 'app.signUp.agreeWithTerms' | translate
+                                                    }}</b></a>
+                                        </nb-checkbox>
+                                    </div>
+                                    <button class="mt-4" fullWidth nbButton [nbSpinner]="loading" status="primary" size="small">
+                                        {{ 'app.signUp.btnSignUp' | translate }}
+                                    </button>
+                                    <div class="row mt-4">
+                                        <div class="col-md-6">
+                                            <button nbButton status="basic" size="small" fullWidth class="text-danger" (click)="signUpWithGoogle()">
+                                                <nb-icon icon="google-outline"></nb-icon>
+                                                {{ 'app.signUpWithGoogle' | translate }}
+                                            </button>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <button nbButton status="primary" size="small" fullWidth class="text-white" (click)="signUpWithFacebook()">
+                                                <nb-icon icon="facebook-outline"></nb-icon>
+                                                {{ 'app.signUpWithFB' | translate }}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="mt-4">
+                                    {{ 'app.signUp.signInPage' | translate }} <a [routerLink]="['../sign-in']">{{
+                                        'app.signIn.title' | translate }}</a>
+                                </div>
+                            </nb-card-body>
+                        </nb-card>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </nb-layout-column>
+</nb-layout>

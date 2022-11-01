@@ -1,0 +1,48 @@
+<nb-layout>
+    <nb-layout-column>
+        <section>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-12 col-sm-8 offser-sm-12 col-md-4 offset-md-4">
+                        <nb-card>
+                            <nb-card-header>
+                                <app-back-nav title="{{ 'app.title' | translate }}" link="/"></app-back-nav>
+                            </nb-card-header>
+                            <nb-card-body class="pt-4 pb-5">
+                                <form [formGroup]="userFormGroup" (ngSubmit)="sendAccountRecoveryLink(userFormGroup.value)"
+                                    #formDir="ngForm">
+                                    <h3 class="text-center">{{'app.accountRecovery.title' | translate }}</h3>
+                                    <p class="text-center">{{'app.accountRecovery.subtitle' | translate }}</p>
+                                    <div class="form-control-group mt-4">
+                                        <label class="label" for="email">{{ 'app.signUp.email' | translate }}</label>
+                                        <input nbInput fieldSize="large" id="email" type="email" pattern=".+@.+..+"
+                                            placeholder="{{ 'app.signUp.email' | translate }}" formControlName="email"
+                                            fullWidth autofocus>
+                                        <ng-container *ngIf="formDir.hasError('required', ['email'])">
+                                            <div class="caption status-danger">
+                                                {{ 'app.signUp.errors.email' | translate }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
+                                    <button class="mt-4" fullWidth nbButton [nbSpinner]="loading" status="primary">
+                                        {{ 'app.accountRecovery.btnValidate' | translate }}
+                                    </button>
+                                </form>
+                                <div class="mt-4">
+                                    <a [routerLink]="['../sign-in']" >
+                                        {{ 'app.signIn.title' | translate }}
+                                    </a>
+                                </div>
+                                <div class="mt-2">
+                                    <a [routerLink]="['../sign-up']">
+                                        {{ 'app.signUp.title' | translate }}
+                                    </a>
+                                </div>
+                            </nb-card-body>
+                        </nb-card>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </nb-layout-column>
+</nb-layout>

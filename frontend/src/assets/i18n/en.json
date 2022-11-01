@@ -1,0 +1,68 @@
+{
+  "app": {
+    "title": "light-speed checkout",
+    "signUp": {
+      "title": "Sign up",
+      "fullname": "Fullname",
+      "email": "Email",
+      "password": "Password",
+      "agreeWithTerms": "Agree with terms and conditions",
+      "btnSignUp":"Register",
+      "signInPage": "Already have an account ?",
+      "successSignUp": "Your account is succesfully created. congrat!",
+      "wrongId": "Authentication failed! Please check your credentials and try again!",
+      "conflit": "A user is already registered with this email. Please another email! ",
+      "errors": {
+        "fullname": "The fullname is required",
+        "email": "The email is required",
+        "password": "The password is required",
+        "agreeWithTerms": "You need to agree with terms and conditions before"
+      }
+    },
+    "signIn": {
+      "title": "Sign in",
+      "btnSignIn": "Login",
+      "signUp": "Create an account",
+      "rememberMe": "Remember me"
+    },
+    "accountRecovery": {
+      "title": "Enter your email",
+      "subtitle": "Enter your email address and we’ll send you a link to reset your password!",
+      "link": "Forgot your passsword ?",
+      "btnValidate":"Submit",
+      "success": "A link has been succesfully sent. Please check your inbox",
+      "notFoundEmail": "This email don't exist in ours database. Please check your email or create a new account"
+    },
+    "resetPassword": {
+      "title": "Change your password",
+      "password": "Password",
+      "passwordConfirmation": "Password confirmation",
+      "btnSubmit": "Submit",
+      "passwordMatchWarn": "Your password do not match. Please try again!",
+      "errors": {
+        "passwordConfirmation": "Password confirmation is required"
+      }
+    },
+    "errors": {
+      "badRequest": "Something went wrong. Please try again!"
+    },
+    "verifiedEmailMessage": "Your email has been succesfully verified!",
+    "signUpWithGoogle": "Sign up with google",
+    "signUpWithFB": "Sign up with google",
+    "signInWithGoogle": "Sign in with google",
+    "signInWithFB": "Sign in with google",
+    "product": {
+      "new": "New product"
+    },
+    "service": {
+      "new":"New service"
+    },
+    "subscription": {
+      "new": "New subscription"
+    },
+    "user": {
+      "profile": "Profile"
+    },
+    "logout": "Logout"
+  }
+}

@@ -3,7 +3,7 @@ export const SMTP_CONFIG = {
     port: 587,
     secure: false,
     auth: {
-        user: 'services@digital-tricks.com',
-        pass: 'Password4digitaltricks15@!'
+        user: 'youraccount@gmail.com',
+        pass: '***yourpassword***'
     }
 }

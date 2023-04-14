@@ -1,6 +1,6 @@
 # light-speed-checkout-startup-kit
 Full source code ==> https://youtu.be/DNhurCPfcO8 
-https://i9.ytimg.com/vi/DNhurCPfcO8/maxresdefault.jpg?v=63ef9b61&sqp=COCD5qEG&rs=AOn4CLAqS9srLJBZhm7WpfY7veGBJR-8Xw
+![alt text](https://i9.ytimg.com/vi/DNhurCPfcO8/maxresdefault.jpg?v=63ef9b61&sqp=COCD5qEG&rs=AOn4CLAqS9srLJBZhm7WpfY7veGBJR-8Xw)
 
 # For the server 
 
